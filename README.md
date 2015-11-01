@@ -2,8 +2,7 @@
 쎈치의 Server Repository
 
 **API Document는 여기에 추가됩니다.**
-
-아직 링크는 없음.
+[바로가기](https://github.com/thenchapp/thench-server/blob/master/api.md)
 
 ##작업현황
 > API v1. 

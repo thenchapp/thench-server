@@ -13,7 +13,7 @@
 ##User part
 ###```POST``` : /user | 회원가입한다.
 ####Request
-```json
+```js
 {
 	userId : "Facebook User Id",
 	accessToken : "Facebook Access Token",
@@ -22,7 +22,7 @@
 ```
 > 페이스북 계정을 통해 로그인 할 경우
 
-```json
+```js
 {
 	email : "사용자의 이메일 (아이디)",
 	passwd : "사용자의 password", //MD5 연산 후 결과.
@@ -32,7 +32,7 @@
 > 일반 이메일 계정으로 로그인할 경우
 
 ####Response
-```json
+```js
 {
 	id : "Thench 내에서 사용될 user의 id", //하나의 해시값임.
 	accessToken : "auth 인증을 위한 토큰",
@@ -46,14 +46,14 @@
 ###`Auth` ```POST``` : /user/me/refresh | 새로운 accessToken을 발급받는다.
 
 ####Request
-```json
+```js
 {
 	refreshToken : "저장하고 있던 refreshToken"
 }
 ```
 
 ####Response
-```json
+```js
 {
 	accessToken : "새로 발급받은 accessToken"
 }
